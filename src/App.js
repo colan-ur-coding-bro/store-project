@@ -9,7 +9,6 @@ import Product from "./components/Product";
 import ProductList from "./components/ProductList";
 import Details from "./components/Details";
 import Modal from "./components/modal";
-
 function App() {
   return (
     <>
