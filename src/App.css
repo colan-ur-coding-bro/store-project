@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+:root {
+  --main_blue: #2a2a72;
+  --light_blue: #009ffd;
+  --main_white: #f3f3f3;
+  --main_dark: #232528;
+  --main_yellow: #ffa400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "oswald", "sans-serif" !important;
+  background-color: var(--main_white) !important;
+  color: var(--main_dark) !important;
+}
+.text-title {
+  font-family: "Gloria Hallelujah", cursive;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text-blue {
+  color: var(--main_blue);
+}
+.text-bright {
+  color: var(--light_blue);
+}
+
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: black;
+  border-radius: 0 !important;
+  border: 2px solid #333 !important;
+}
+.btn-black:hover {
+  background-color: var(--main_dark) !important;
+  color: white !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #ffa400;
+}
+.row {
+  margin-right: 0 !important;
+}
+
+@media (max-width: 750px) {
+  .small h1 {
+    font-size: 30px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .small h2 {
+    font-size: 25px;
   }
-  to {
-    transform: rotate(360deg);
+  .small h3 {
+    font-size: 19px;
+  }
+  .small h4 {
+    font-size: 15px;
   }
 }
